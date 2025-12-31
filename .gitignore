@@ -1,0 +1,16 @@
+# --- Variáveis de Ambiente ---
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+# O asterisco abaixo cobre qualquer arquivo que comece com .env
+.env*
+
+# Exceção: Descomente a linha abaixo se quiser enviar um modelo de exemplo
+# !.env.example
+
+# --- Chaves de Segurança e Certificados ---
+*.pem
+*.key
+*.pub

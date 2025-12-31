@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HELPO • Planos de cuidado</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    ::selection { background: #4169E1; color: #F8FAFC; }
+  </style>
+</head>
+<body class="min-h-screen bg-[#F8FAFC] text-[#1F2937]">
+  <header class="relative border-b border-[#E5E7EB] bg-[#F9FAFB]">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#4169E1] text-[#F9FAFB] font-extrabold">HP</div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-[#4169E1]">HELPO</p>
+          <p class="text-sm text-[#4B5563]">Cuidado agendado, seguro e humano.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-3 text-sm font-semibold">
+        <a class="rounded-full px-4 py-2 text-[#4B5563]" href="/">Home</a>
+        <a class="rounded-full px-4 py-2 text-[#4B5563]" href="/cliente">Painel do cliente</a>
+        <a class="rounded-full bg-[#4169E1] px-4 py-2 text-[#F9FAFB]" href="#cta">Quero agendar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative mx-auto max-w-6xl px-6 py-12 space-y-14">
+    <!-- CTA topo -->
+    <section class="space-y-4 text-center">
+      <p class="text-xs uppercase tracking-[0.22em] text-[#4169E1]">Planos e Precos</p>
+      <h1 class="text-4xl font-semibold text-[#1F2937]">Escolha o plano ideal para o cuidado que voce precisa.</h1>
+      <p class="text-sm text-[#4B5563] max-w-3xl mx-auto">Nossos planos variam pela prioridade de agendamento: quanto maior o plano, menor o tempo de espera entre a solicitacao e o inicio do cuidado. Pensamos em familias com niveis diferentes de necessidade.</p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
+        <a class="rounded-full bg-[#4169E1] px-5 py-3 font-semibold text-[#F9FAFB]" href="#planos">Ver planos</a>
+        <a class="rounded-full border border-[#4169E1] px-5 py-3 font-semibold text-[#4169E1]" href="#contato">Falar com consultor</a>
+      </div>
+    </section>
+
+    <!-- Grid de planos -->
+    <section class="grid gap-5 md:grid-cols-2 lg:grid-cols-4" id="planos">
+      <!-- Plano Basico -->
+      <article class="flex flex-col rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#4169E1]">Plano Basico</p>
+        <h3 class="text-xl font-semibold mt-2 text-[#1F2937]">3 atendimentos / mes</h3>
+        <p class="mt-2 text-sm text-[#4B5563]">Para cuidados pontuais e previsiveis.</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-[#4B5563]">
+          <li>• Prazo de processamento: ate 12h entre a solicitacao e o evento</li>
+          <li>• Duracao media por evento: ate 2h</li>
+          <li>• Prioridade: padrao</li>
+          <li>• Atendimentos: 3 por mes</li>
+          <li>• Indicado para apoio eventual</li>
+        </ul>
+        <p class="mt-4 text-lg font-semibold text-[#1F2937]">R$ 199,00 / mes</p>
+        <a class="mt-4 inline-flex justify-center rounded-full bg-[#4169E1] px-5 py-2.5 text-sm font-semibold text-[#F9FAFB]" href="#contato">Escolher plano</a>
+      </article>
+
+      <!-- Plano Intermediario -->
+      <article class="flex flex-col rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#4169E1]">Plano Intermediario</p>
+        <h3 class="text-xl font-semibold mt-2 text-[#1F2937]">5 atendimentos / mes</h3>
+        <p class="mt-2 text-sm text-[#4B5563]">Mais flexibilidade semanal com prioridade media.</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-[#4B5563]">
+          <li>• Prazo de processamento: ate 8h entre a solicitacao e o evento</li>
+          <li>• Duracao media por evento: ate 3h</li>
+          <li>• Prioridade: media</li>
+          <li>• Atendimentos: 5 por mes</li>
+          <li>• Indicado para acompanhamento recorrente</li>
+        </ul>
+        <p class="mt-4 text-lg font-semibold text-[#1F2937]">R$ 299,00 / mes</p>
+        <a class="mt-4 inline-flex justify-center rounded-full bg-[#4169E1] px-5 py-2.5 text-sm font-semibold text-[#F9FAFB]" href="#contato">Escolher plano</a>
+      </article>
+
+      <!-- Plano Avancado -->
+      <article class="flex flex-col rounded-2xl border border-[#4169E1] bg-white p-6 shadow-md">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#4169E1]">Plano Avancado</p>
+        <h3 class="text-xl font-semibold mt-2 text-[#1F2937]">10 atendimentos / mes</h3>
+        <p class="mt-2 text-sm text-[#4B5563]">Suporte frequente com alta prioridade e menor espera.</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-[#4B5563]">
+          <li>• Prazo de processamento: ate 6h entre a solicitacao e o evento</li>
+          <li>• Duracao media por evento: ate 4h</li>
+          <li>• Prioridade: alta</li>
+          <li>• Atendimentos: 10 por mes</li>
+          <li>• Indicado para rotinas intensas</li>
+        </ul>
+        <p class="mt-4 text-lg font-semibold text-[#1F2937]">R$ 499,00 / mes</p>
+        <a class="mt-4 inline-flex justify-center rounded-full bg-[#4169E1] px-5 py-2.5 text-sm font-semibold text-[#F9FAFB]" href="#contato">Escolher plano</a>
+      </article>
+
+      <!-- Plano Personalizado -->
+      <article class="flex flex-col rounded-2xl border-2 border-[#4169E1] bg-[#E9EEFF] p-6 shadow-md">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#4169E1]">Plano Personalizado</p>
+        <h3 class="text-xl font-semibold mt-2 text-[#1F2937]">Atendimento avulso</h3>
+        <p class="mt-2 text-sm text-[#1F2937]">Para necessidades especificas e imediatas.</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-[#1F2937]">
+          <li>• Prazo de processamento: ate 3h entre a solicitacao e o evento</li>
+          <li>• Duracao media por evento: ate 4h</li>
+          <li>• Prioridade: alta</li>
+          <li>• Atendimentos: sob demanda</li>
+          <li>• Indicado para casos pontuais</li>
+        </ul>
+        <p class="mt-4 text-lg font-semibold text-[#1F2937]">R$ 120,00 por atendimento</p>
+        <a class="mt-4 inline-flex justify-center rounded-full bg-[#4169E1] px-5 py-2.5 text-sm font-semibold text-[#F9FAFB]" href="#contato">Escolher plano</a>
+      </article>
+    </section>
+
+    <section class="rounded-2xl border border-[#E5E7EB] bg-white p-5 text-sm text-[#4B5563]">
+      <p class="text-[#1F2937] font-semibold">Entenda o prazo de processamento</p>
+      <p class="mt-1">Prazo de processamento e o tempo entre a solicitacao e o inicio do atendimento. Planos maiores reduzem essa espera e oferecem mais flexibilidade; a duracao do evento segue o limite definido em cada plano.</p>
+    </section>
+
+    <!-- Tabela comparativa -->
+    <section class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-4 text-sm text-[#4B5563]">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <p class="text-xs uppercase tracking-[0.22em] text-[#4169E1]">Comparacao rapida</p>
+          <h3 class="text-xl font-semibold text-[#1F2937]">Veja o que cada plano oferece.</h3>
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-left">
+          <thead class="text-xs uppercase tracking-[0.12em] text-[#6B7280]">
+            <tr>
+              <th class="py-2 pr-4">Plano</th>
+              <th class="py-2 pr-4">Preco</th>
+              <th class="py-2 pr-4">Atendimentos/mes</th>
+              <th class="py-2 pr-4">⏱️ Prazo de processamento</th>
+              <th class="py-2 pr-4">⌛ Duracao media por evento</th>
+              <th class="py-2 pr-4">⭐ Prioridade</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#E5E7EB] text-[#1F2937]">
+            <tr>
+              <td class="py-3 pr-4">Plano Basico</td>
+              <td class="py-3 pr-4">R$ 199,00 / mes</td>
+              <td class="py-3 pr-4">3</td>
+              <td class="py-3 pr-4">Ate 12h</td>
+              <td class="py-3 pr-4">Ate 2h</td>
+              <td class="py-3 pr-4">Padrao</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4">Plano Intermediario</td>
+              <td class="py-3 pr-4">R$ 299,00 / mes</td>
+              <td class="py-3 pr-4">5</td>
+              <td class="py-3 pr-4">Ate 8h</td>
+              <td class="py-3 pr-4">Ate 3h</td>
+              <td class="py-3 pr-4">Media</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4">Plano Avancado</td>
+              <td class="py-3 pr-4">R$ 499,00 / mes</td>
+              <td class="py-3 pr-4">10</td>
+              <td class="py-3 pr-4">Ate 6h</td>
+              <td class="py-3 pr-4">Ate 4h</td>
+              <td class="py-3 pr-4">Alta</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4">Plano Personalizado</td>
+              <td class="py-3 pr-4">R$ 120,00 por atendimento</td>
+              <td class="py-3 pr-4">Sob demanda</td>
+              <td class="py-3 pr-4">Ate 3h</td>
+              <td class="py-3 pr-4">Ate 4h</td>
+              <td class="py-3 pr-4">Alta</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contato com consultor -->
+    <section id="contato" class="rounded-2xl border border-[#E5E7EB] bg-white p-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="space-y-1">
+        <h2 class="text-2xl font-semibold text-[#1F2937]">Nao sabe qual plano escolher? Fale com um de nossos consultores.</h2>
+        <p class="text-sm text-[#4B5563]">Cada familia vive um momento diferente. Nosso time ajuda a definir o nivel de prioridade e o plano que traz mais tranquilidade para voce.</p>
+      </div>
+      <a class="rounded-full bg-[#4169E1] px-6 py-3.5 text-base font-semibold text-[#F9FAFB]" href="mailto:contato@helpo.com">Falar com Consltor!</a>
+    </section>
+
+    <!-- FAQ -->
+    <section class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-3">
+      <h3 class="text-xl font-semibold text-[#1F2937]">Duvidas frequentes</h3>
+      <details class="border border-[#E5E7EB] rounded-xl p-3">
+        <summary class="cursor-pointer text-sm font-semibold text-[#1F2937]">1. Como e definido o tempo de espera?</summary>
+        <p class="mt-2 text-sm text-[#4B5563]">O prazo de inicio depende do plano. Planos maiores recebem prioridade e comecam mais rapido; planos menores exigem mais antecedencia.</p>
+      </details>
+      <details class="border border-[#E5E7EB] rounded-xl p-3">
+        <summary class="cursor-pointer text-sm font-semibold text-[#1F2937]">2. Posso mudar de plano quando precisar?</summary>
+        <p class="mt-2 text-sm text-[#4B5563]">Sim. Fale com o consultor e ajustamos o plano conforme a necessidade da sua familia.</p>
+      </details>
+      <details class="border border-[#E5E7EB] rounded-xl p-3">
+        <summary class="cursor-pointer text-sm font-semibold text-[#1F2937]">3. Quem sao os cuidadores e como sao escolhidos?</summary>
+        <p class="mt-2 text-sm text-[#4B5563]">Sao profissionais cadastrados e validados. A plataforma sugere quem esta disponivel dentro do prazo do seu plano.</p>
+      </details>
+      <details class="border border-[#E5E7EB] rounded-xl p-3">
+        <summary class="cursor-pointer text-sm font-semibold text-[#1F2937]">4. E se eu nao usar todos os atendimentos do mes?</summary>
+        <p class="mt-2 text-sm text-[#4B5563]">Vamos avaliar a melhor opcao: reagendar, migrar de plano ou ajustar a distribuicao conforme a politica vigente.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="relative border-t border-[#E5E7EB] bg-[#F9FAFB]">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between text-sm text-[#4B5563]">
+      <div>
+        <p class="font-semibold text-[#1F2937]">HELPO</p>
+        <p>Assistencia programada, humana e segura.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a class="text-[#4169E1]" href="/">Home</a>
+        <a class="text-[#4169E1]" href="/cliente">Painel</a>
+        <a class="text-[#4169E1]" href="#">Privacidade</a>
+        <a class="text-[#4169E1]" href="#">Termos</a>
+        <a class="text-[#4169E1]" href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HELPO • Cuidados agendados e seguros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    ::selection { background: #bae6fd; color: #0f172a; }
+  </style>
+</head>
+<body class="min-h-screen bg-sky-50 text-slate-800">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-32 -right-24 h-72 w-72 rounded-full bg-sky-200/70 blur-3xl"></div>
+    <div class="absolute -bottom-36 -left-28 h-80 w-80 rounded-full bg-emerald-200/60 blur-3xl"></div>
+  </div>
+
+  <header class="relative border-b border-sky-100 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-sky-400 text-white font-extrabold">HP</div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-sky-600">HELPO</p>
+          <p class="text-sm text-slate-600">Cuidado agendado, seguro e humano.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-3 text-sm font-semibold">
+        <a class="rounded-full px-4 py-2 text-slate-700 hover:text-slate-900 transition" href="#problema">Por que existe</a>
+        <a class="rounded-full px-4 py-2 text-slate-700 hover:text-slate-900 transition" href="#como">Como funciona</a>
+        <a class="rounded-full px-4 py-2 text-slate-700 hover:text-slate-900 transition" href="/planos">Planos</a>
+        <a class="rounded-full px-4 py-2 text-slate-700 hover:text-slate-900 transition" href="#confiar">Seguranca</a>
+        <a class="rounded-full border border-sky-200 px-4 py-2 text-slate-700 hover:border-sky-400 hover:text-slate-900 transition" href="/cliente">Entrar no painel</a>
+        <a class="rounded-full bg-sky-400 px-4 py-2 text-slate-900 shadow-lg shadow-sky-200/80 hover:bg-sky-300 transition" href="#cta-final">Quero agendar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative mx-auto max-w-6xl px-6 py-12 space-y-16">
+    <!-- 1. Hero -->
+    <section class="grid gap-10 lg:grid-cols-12 lg:items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <p class="text-xs uppercase tracking-[0.28em] text-sky-600">Assistencia programada para idosos</p>
+        <h1 class="text-4xl font-semibold leading-tight text-slate-900">Conecte sua familia a cuidadores validados, com hora marcada e visibilidade total.</h1>
+        <p class="text-lg text-slate-700">Agende cuidados com antecedencia minima de 12h, escolha o tipo de servico e acompanhe cada passo em um painel simples e humano.</p>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <a class="rounded-full bg-sky-400 px-5 py-3 font-semibold text-slate-900 shadow-lg shadow-sky-200/80 hover:bg-sky-300 transition" href="#cta-final">Agendar um cuidado</a>
+          <a href="/cliente" class="rounded-full border border-sky-200 px-5 py-3 font-semibold text-slate-800 hover:border-sky-400 hover:text-slate-900 transition">Ver o painel do cliente</a>
+          <span class="text-xs text-slate-500 self-center">Sem urgencias • Apenas agendado • Duracao media 2h</span>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl border border-sky-100 bg-white p-5 shadow-2xl shadow-sky-100 space-y-3">
+          <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Como fica para o cliente</p>
+          <div class="rounded-xl border border-sky-100 bg-sky-50 p-3 space-y-2">
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-slate-800">Proximo atendimento</span>
+              <span class="rounded-full bg-emerald-200 px-2 py-1 text-[11px] font-semibold text-emerald-800">Confirmado</span>
+            </div>
+            <p class="text-lg font-semibold text-slate-900">Hoje, 19:00 • Higiene (2h)</p>
+            <p class="text-xs text-sky-700">Cuidador validado atribuido automaticamente</p>
+          </div>
+          <div class="grid grid-cols-3 gap-3 text-sm">
+            <div class="rounded-xl border border-sky-100 bg-white p-3">
+              <p class="text-slate-500 text-xs uppercase tracking-[0.12em]">No mes</p>
+              <p class="text-2xl font-semibold text-slate-900">8</p>
+              <p class="text-slate-600 text-xs">Servicos agendados</p>
+            </div>
+            <div class="rounded-xl border border-sky-100 bg-white p-3">
+              <p class="text-slate-500 text-xs uppercase tracking-[0.12em]">Em aberto</p>
+              <p class="text-2xl font-semibold text-slate-900">3</p>
+              <p class="text-slate-600 text-xs">Pendentes/confirmados</p>
+            </div>
+            <div class="rounded-xl border border-sky-100 bg-white p-3">
+              <p class="text-slate-500 text-xs uppercase tracking-[0.12em]">Satisfacao</p>
+              <p class="text-2xl font-semibold text-slate-900">4.8</p>
+              <p class="text-slate-600 text-xs">Media recente</p>
+            </div>
+          </div>
+          <a href="/cliente" class="inline-flex items-center justify-center gap-2 rounded-full bg-sky-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg shadow-sky-200/80 hover:bg-sky-300 transition">Abrir o painel agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Problema que resolvemos -->
+    <section id="problema" class="grid gap-6 lg:grid-cols-2">
+      <div class="space-y-3">
+        <p class="text-xs uppercase tracking-[0.22em] text-sky-600">O desafio das familias</p>
+        <h2 class="text-2xl font-semibold text-slate-900">Encontrar cuidadores confiaveis, com previsibilidade e sem sustos.</h2>
+        <p class="text-slate-700">Para quem cuida de um idoso, improviso e incerteza geram ansiedade. Nao e so sobre disponibilidade, e sobre confiar em quem entra em casa, com combinados claros e acompanhamento.</p>
+      </div>
+      <div class="grid gap-3 text-sm text-slate-700">
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Dificuldade de achar profissionais validados</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Falta de previsao de horario e duracao</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Inseguranca de deixar um familiar com desconhecidos</div>
+      </div>
+    </section>
+
+    <!-- 3. Nossa solução -->
+    <section id="solucao" class="grid gap-6 lg:grid-cols-2">
+      <div class="space-y-3">
+        <p class="text-xs uppercase tracking-[0.22em] text-sky-600">Como resolvemos</p>
+        <h2 class="text-2xl font-semibold text-slate-900">Plataforma que organiza e valida o cuidado, sempre agendado.</h2>
+        <p class="text-slate-700">Voce escolhe o tipo de cuidado, define data e horario (minimo 12h), e o sistema sugere cuidadores disponiveis e previamente cadastrados. Tudo fica registrado e acompanhavel.</p>
+      </div>
+      <div class="grid gap-3 text-sm text-slate-700">
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Agenda com antecedencia • sem urgencia</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Duracao media de 2h (ajustavel para 3h ou 4h)</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Cuidadores validados e intermediacao administrativa</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Historico e status sempre visiveis</div>
+      </div>
+    </section>
+
+    <!-- 4. Como funciona -->
+    <section id="como" class="space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.22em] text-sky-600">Passo a passo simples</p>
+          <h2 class="text-2xl font-semibold text-slate-900">Em 4 passos voce agenda e acompanha.</h2>
+        </div>
+        <a class="text-sm font-semibold text-sky-700 hover:text-slate-900" href="/cliente">Ver o painel em acao</a>
+      </div>
+      <div class="grid gap-4 md:grid-cols-4">
+        <div class="rounded-2xl border border-sky-100 bg-white p-4 shadow-xl shadow-sky-100">
+          <p class="text-xs uppercase tracking-[0.14em] text-slate-500">1. Cadastro</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Crie sua conta</h3>
+          <p class="text-sm text-slate-700">Dados pessoais e contato.</p>
+        </div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4 shadow-xl shadow-sky-100">
+          <p class="text-xs uppercase tracking-[0.14em] text-slate-500">2. Escolha</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Tipo de cuidado</h3>
+          <p class="text-sm text-slate-700">Acompanhamento, companhia, medicacao ou cuidados pontuais.</p>
+        </div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4 shadow-xl shadow-sky-100">
+          <p class="text-xs uppercase tracking-[0.14em] text-slate-500">3. Agende</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Data e horario</h3>
+          <p class="text-sm text-slate-700">Minimo 12h de antecedencia. Duracao padrao 2h (pode ajustar).</p>
+        </div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4 shadow-xl shadow-sky-100">
+          <p class="text-xs uppercase tracking-[0.14em] text-slate-500">4. Acompanhe</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Status e historico</h3>
+          <p class="text-sm text-slate-700">Pendentes, atribuidos, confirmados, concluidos ou cancelados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Tipos de serviços -->
+    <section id="servicos" class="space-y-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.22em] text-sky-600">Servicos oferecidos</p>
+        <h2 class="text-2xl font-semibold text-slate-900">Cuidados que cobrem o dia a dia.</h2>
+      </div>
+      <div class="grid gap-3 md:grid-cols-3 text-sm text-slate-800">
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">Acompanhamento medico</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">Companhia domiciliar</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">Auxilio com medicacao</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">Cuidados pontuais</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">Atividades rapidas</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">Rotinas basicas e higiene</div>
+      </div>
+    </section>
+
+    <!-- 6. Planos e formas de uso -->
+    <section id="planos" class="grid gap-6 lg:grid-cols-3">
+      <div class="lg:col-span-2 space-y-3">
+        <p class="text-xs uppercase tracking-[0.22em] text-sky-600">Planos e avulso</p>
+        <h2 class="text-2xl font-semibold text-slate-900">Use quando precisar ou mantenha rotina.</h2>
+        <p class="text-slate-700">Planos mensais com blocos de atendimentos (3, 5 ou 10 visitas) ou uso avulso sob demanda. Valores transparentes e sem letras miudas. Pagamentos automaticos podem vir em versao futura.</p>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <a class="rounded-full bg-sky-400 px-5 py-3 font-semibold text-slate-900 shadow-lg shadow-sky-200/80 hover:bg-sky-300 transition" href="#cta-final">Comecar agora</a>
+          <a class="rounded-full border border-sky-200 px-5 py-3 font-semibold text-slate-800 hover:border-sky-400 hover:text-slate-900 transition" href="/planos">Falar com a equipe</a>
+          <span class="text-xs text-slate-500 self-center">Migrar ou cancelar e simples</span>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-sky-100 bg-white p-5 shadow-xl shadow-sky-100 space-y-2 text-sm text-slate-700">
+        <p class="text-xs uppercase tracking-[0.14em] text-slate-500">Resumo</p>
+        <p>• Agendamentos a partir de 12h de antecedencia</p>
+        <p>• Duracao padrao 2h (opcoes 3h e 4h)</p>
+        <p>• Atribuicao de cuidador feita pela plataforma</p>
+        <p>• Historico e comprovantes de atendimento</p>
+      </div>
+    </section>
+
+    <!-- 7. Por que confiar -->
+    <section id="confiar" class="space-y-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.22em] text-sky-600">Seguranca e confianca</p>
+        <h2 class="text-2xl font-semibold text-slate-900">Cuidadores validados, processo organizado, atendimento humano.</h2>
+      </div>
+      <div class="grid gap-3 md:grid-cols-2 text-sm text-slate-700">
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Cuidadores previamente cadastrados e verificados</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Intermediacao e controle administrativo</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Status e historico a qualquer momento</div>
+        <div class="rounded-2xl border border-sky-100 bg-white p-4">• Atendimento humano para duvidas e apoio</div>
+      </div>
+    </section>
+
+    <!-- 8. Chamada final -->
+    <section id="cta-final" class="rounded-2xl border border-sky-100 bg-white p-6 shadow-xl shadow-sky-100 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <p class="text-xs uppercase tracking-[0.22em] text-sky-600">Pronto para comecar?</p>
+        <h2 class="text-2xl font-semibold text-slate-900">Agende um cuidado seguro para quem voce ama.</h2>
+        <p class="text-sm text-slate-700">Sem promessas exageradas, apenas previsibilidade, gente validada e acompanhamento.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 text-sm">
+        <a class="rounded-full bg-sky-400 px-5 py-3 font-semibold text-slate-900 shadow-lg shadow-sky-200/80 hover:bg-sky-300 transition" href="/cliente">Agendar agora</a>
+        <a class="rounded-full border border-sky-200 px-5 py-3 font-semibold text-slate-800 hover:border-sky-400 hover:text-slate-900 transition" href="/planos">Conhecer planos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative border-t border-sky-100 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between text-sm text-slate-600">
+      <div>
+        <p class="font-semibold text-slate-900">HELPO</p>
+        <p>Assistencia programada, humana e segura.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a class="hover:text-sky-700" href="/planos">Planos</a>
+        <a class="hover:text-sky-700" href="#confiar">Seguranca</a>
+        <a class="hover:text-sky-700" href="#">Privacidade</a>
+        <a class="hover:text-sky-700" href="#">Termos</a>
+        <a class="hover:text-sky-700" href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
