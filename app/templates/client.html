@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Módulo Cliente</title>
+  <title>Gestão de Serviços</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Pequenos ajustes para a demo sem backend */
@@ -11,19 +11,20 @@
   </style>
 </head>
 <body class="min-h-screen bg-[#F8FAFC] text-[#1F2937]">
-  <header class="relative border-b border-[#E5E7EB] bg-[#F9FAFB]">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
-      <div class="space-y-1">
-        <p class="text-xs uppercase tracking-[0.25em] text-[#4169E1]">HELPO</p>
-        <div class="flex flex-wrap items-center gap-3">
-          <h1 class="text-3xl font-semibold text-[#1F2937]">Módulo Cliente</h1>
-          <span class="rounded-full bg-[#4169E1] px-3 py-1 text-xs font-semibold text-[#F9FAFB]">Plano: 5 atendimentos/mês</span>
+  <header class="relative border-b border-[#E5E7EB] bg-white">
+    <div class="mx-auto max-w-6xl px-6 py-5">
+      <div class="flex items-center justify-between">
+        <div class="flex-1">
+          <a href="/" class="inline-block text-xs uppercase tracking-[0.25em] text-[#4169E1] hover:opacity-80 transition cursor-pointer mb-2">HELPO</a>
+          <div class="flex items-center gap-3">
+            <h1 class="text-2xl font-bold text-[#1F2937]">Gestão de Serviços</h1>
+            <span class="text-base text-[#1F2937]">• Carla Souza</span>
+          </div>
+          <div class="mt-2">
+            <span class="inline-block border-2 border-[#4169E1] px-4 py-1 rounded-full text-sm text-[#4169E1] font-medium">Plano Ativo: 5 atendimentos/mês</span>
+          </div>
         </div>
-        <p class="text-[#4B5563]">Agende cuidados programados para idosos com seguranca, previsao e visibilidade total.</p>
-        <a href="/" class="inline-flex items-center gap-2 text-sm font-semibold text-[#4169E1]">← Voltar para a pagina inicial</a>
-      </div>
-      <div class="flex gap-2">
-        <button class="rounded-full bg-[#4169E1] px-4 py-2 text-sm font-semibold text-[#F9FAFB]">Nova solicitacao</button>
+        <button class="rounded-[30px] bg-[#4169E1] px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:bg-[#3457c4] transition">Nova Solicitação</button>
       </div>
     </div>
   </header>
@@ -31,32 +32,29 @@
   <main class="relative mx-auto max-w-6xl px-6 py-10 space-y-10">
     <!-- Dashboard resumido -->
     <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="rounded-2xl border border-[#E5E7EB] bg-white p-4">
-        <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Proximo atendimento</p>
-        <h3 class="mt-2 text-2xl font-semibold text-[#1F2937]">Hoje, 19:00</h3>
-        <p class="text-sm text-[#4B5563]">Higiene e cuidados • 2h</p>
-        <p class="text-sm text-[#4169E1]">Cuidador confirmado: Ana Martins</p>
+      <div class="rounded-2xl border border-[#E5E7EB] bg-white p-4 text-center">
+        <h3 class="text-sm uppercase text-[#6B7280] mb-2 tracking-wide">PRÓXIMO ATENDIMENTO</h3>
+        <p class="text-2xl font-bold text-[#1F2937]">Hoje, 19:00</p>
+        <p class="text-sm text-[#4B5563] mt-1">Higiene e cuidados • 2h</p>
+        <p class="text-sm text-green-600 font-semibold mt-1">Confirmado: Ana Martins</p>
       </div>
-      <div class="rounded-2xl border border-[#E5E7EB] bg-white p-4">
-        <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Atendimentos no mes</p>
-        <h3 class="mt-2 text-2xl font-semibold text-[#1F2937]">08</h3>
-        <p class="text-sm text-[#4B5563]">2 pendentes • 5 concluidos • 1 cancelado</p>
+      <div class="rounded-2xl border border-[#E5E7EB] bg-white p-4 text-center">
+        <h3 class="text-sm uppercase text-[#6B7280] mb-2 tracking-wide">ATENDIMENTOS NO MÊS</h3>
+        <p class="text-2xl font-bold text-[#1F2937]">08</p>
+        <p class="text-sm text-[#4B5563] mt-1"><span class="text-blue-600 font-semibold">2 pendentes</span> • <span class="text-green-600 font-semibold">5 concluídos</span> • <span class="text-yellow-600 font-semibold">1 cancelado</span></p>
       </div>
-      <div class="rounded-2xl border border-[#E5E7EB] bg-white p-4">
-        <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Solicitacoes em aberto</p>
-        <h3 class="mt-2 text-2xl font-semibold text-[#1F2937]">03</h3>
-        <p class="text-sm text-[#4B5563]">1 pendente • 2 confirmadas</p>
+      <div class="rounded-2xl border border-[#E5E7EB] bg-white p-4 text-center">
+        <h3 class="text-sm uppercase text-[#6B7280] mb-2 tracking-wide">SOLICITAÇÕES EM ABERTO</h3>
+        <p class="text-2xl font-bold text-[#1F2937]">03</p>
+        <p class="text-sm text-[#4B5563] mt-1"><span class="text-blue-600 font-semibold">1 pendente</span> • <span class="text-green-600 font-semibold">2 confirmadas</span></p>
       </div>
     </section>
 
     <!-- Fluxo de solicitacao em largura total -->
     <section class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-4">
       <div class="flex items-center justify-between gap-2">
-        <div>
-          <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Solicitacao de servico</p>
-          <h2 class="text-xl font-semibold text-[#1F2937]">Criar novo agendamento</h2>
-        </div>
-        <span class="rounded-full bg-[#4169E1] px-3 py-1 text-xs font-semibold text-[#F9FAFB]">Min. 12h de antecedencia</span>
+        <h2 class="text-xl font-bold text-[#1F2937]">Solicitação de Serviço</h2>
+        <span class="rounded-full bg-[#4169E1] px-3 py-1 text-xs font-semibold text-[#F9FAFB]">Mín. 12h de antecedência</span>
       </div>
       <form class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <label class="space-y-1">
@@ -104,10 +102,12 @@
           <span class="text-sm text-[#4B5563]">Observacoes adicionais</span>
           <textarea rows="3" placeholder="Restricoes, preferencias, instrucoes rapidas" class="w-full rounded-xl border border-[#E5E7EB] bg-white px-3 py-2 text-sm placeholder:text-[#6B7280]"></textarea>
         </label>
-        <div class="lg:col-span-3 flex flex-wrap gap-3">
-          <button type="button" class="rounded-full bg-[#4169E1] px-5 py-2 text-sm font-semibold text-[#F9FAFB]">Solicitar servico</button>
-          <button type="button" class="rounded-full border border-[#4169E1] px-5 py-2 text-sm font-semibold text-[#4169E1]">Salvar rascunho</button>
-          <span class="text-xs text-[#6B7280] self-center">Status inicial: Pendente • Atribuicao feita pelo sistema</span>
+        <div class="lg:col-span-3 flex flex-col items-center gap-3 mt-4">
+          <div class="flex flex-wrap gap-3 justify-center">
+            <button type="button" class="rounded-[30px] bg-[#4169E1] px-8 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg transition">Solicitar Serviço</button>
+            <button type="button" class="rounded-[30px] border-2 border-[#4169E1] px-8 py-3 text-sm font-semibold text-[#4169E1] hover:bg-[#4169E1] hover:text-white transition">Salvar Rascunho</button>
+          </div>
+          <span class="text-xs text-[#6B7280]">Status inicial: Pendente • Atribuição feita pelo sistema</span>
         </div>
       </form>
     </section>
@@ -115,50 +115,43 @@
     <!-- Timeline + Historico de cuidadores -->
     <section class="grid gap-6 lg:grid-cols-2">
       <div class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-4">
-        <div class="flex items-center justify-between gap-2">
-          <div>
-            <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Linha do tempo</p>
-            <h2 class="text-xl font-semibold text-[#1F2937]">Eventos de cuidado</h2>
-          </div>
-        </div>
+        <h2 class="text-xl font-bold text-[#1F2937]">Eventos de Cuidado</h2>
         <ol class="space-y-3 border-l border-[#E5E7EB] pl-4">
           <li class="relative pl-4">
-            <span class="absolute -left-[11px] top-1 h-3 w-3 rounded-full bg-[#4169E1]"></span>
+            <span class="absolute -left-[11px] top-1 h-3 w-3 rounded-full bg-green-500"></span>
             <div class="flex items-center justify-between">
-              <p class="text-sm font-semibold text-[#1F2937]">Acompanhamento medico • 02/10</p>
-              <span class="rounded-full bg-[#4169E1] px-2 py-1 text-[11px] font-semibold text-[#F9FAFB]">Confirmado</span>
+              <p class="text-sm font-semibold text-[#1F2937]">Acompanhamento médico • 02/10</p>
+              <span class="rounded-full bg-green-500 px-2 py-1 text-[11px] font-semibold text-white">Confirmado</span>
             </div>
             <p class="text-xs font-semibold text-[#1F2937]">Cuidador: Ana Martins</p>
-            <p class="text-xs text-[#6B7280]">Entrada: 19:00 • Saida: 21:00 • Duracao: 2h • Idoso: Maria Souza • Endereco: Rua das Flores, 120</p>
+            <p class="text-xs text-[#6B7280]">Entrada: 19:00 • Saída: 21:00 • Duração: 2h • Idoso: Maria Souza • Endereço: Rua das Flores, 120</p>
           </li>
           <li class="relative pl-4">
-            <span class="absolute -left-[11px] top-1 h-3 w-3 rounded-full bg-[#4169E1]"></span>
+            <span class="absolute -left-[11px] top-1 h-3 w-3 rounded-full bg-blue-500"></span>
             <div class="flex items-center justify-between">
               <p class="text-sm font-semibold text-[#1F2937]">Companhia domiciliar • 04/10</p>
-              <span class="rounded-full bg-[#4169E1] px-2 py-1 text-[11px] font-semibold text-[#F9FAFC]">Pendente</span>
+              <span class="rounded-full bg-blue-500 px-2 py-1 text-[11px] font-semibold text-white">Pendente</span>
             </div>
             <p class="text-xs font-semibold text-[#1F2937]">Cuidador: Bruno Costa</p>
-            <p class="text-xs text-[#6B7280]">Entrada: 15:00 • Saida: 18:00 • Duracao: 3h • Idoso: Joao Mendes • Aguardando atribuicao</p>
+            <p class="text-xs text-[#6B7280]">Entrada: 15:00 • Saída: 18:00 • Duração: 3h • Idoso: João Mendes • Aguardando atribuição</p>
           </li>
           <li class="relative pl-4">
-            <span class="absolute -left-[11px] top-1 h-3 w-3 rounded-full bg-[#4169E1]"></span>
+            <span class="absolute -left-[11px] top-1 h-3 w-3 rounded-full bg-yellow-500"></span>
             <div class="flex items-center justify-between">
-              <p class="text-sm font-semibold text-[#1F2937]">Auxilio com medicacao • 06/10</p>
-              <span class="rounded-full bg-[#4169E1] px-2 py-1 text-[11px] font-semibold text-[#F9FAFB]">Atribuido</span>
+              <p class="text-sm font-semibold text-[#1F2937]">Auxílio com medicação • 06/10</p>
+              <span class="rounded-full bg-yellow-500 px-2 py-1 text-[11px] font-semibold text-white">Cancelado</span>
             </div>
             <p class="text-xs font-semibold text-[#1F2937]">Cuidador: Clara Nogueira</p>
-            <p class="text-xs text-[#6B7280]">Entrada: 09:00 • Saida: 11:00 • Duracao: 2h • Idoso: Maria Souza • Cuidador pre-selecionado</p>
+            <p class="text-xs text-[#6B7280]">Entrada: 09:00 • Saída: 11:00 • Duração: 2h • Idoso: Maria Souza • Cuidador cancelou</p>
           </li>
         </ol>
+        <div class="flex justify-center pt-2">
+          <button class="text-sm text-[#4169E1] font-semibold hover:underline">Ver mais</button>
+        </div>
       </div>
 
       <div class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-4">
-        <div class="flex items-center justify-between gap-2">
-          <div>
-            <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Historico de cuidadores</p>
-            <h2 class="text-xl font-semibold text-[#1F2937]">Referencias ja atendidas</h2>
-          </div>
-        </div>
+        <h2 class="text-xl font-bold text-[#1F2937]">Histórico de Cuidadores</h2>
         <div class="space-y-3">
           <article class="flex items-center justify-between gap-3 rounded-xl border border-[#E5E7EB] bg-white p-4">
             <div class="flex items-center gap-3">
@@ -191,6 +184,9 @@
             </div>
           </article>
         </div>
+        <div class="flex justify-center pt-2">
+          <button class="text-sm text-[#4169E1] font-semibold hover:underline">Ver mais</button>
+        </div>
       </div>
     </section>
 
@@ -198,10 +194,7 @@
     <section class="grid gap-6 lg:grid-cols-2">
       <div class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-4">
         <div class="flex items-center justify-between gap-2">
-          <div>
-            <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Perfil do cliente</p>
-            <h2 class="text-xl font-semibold text-[#1F2937]">Dados pessoais</h2>
-          </div>
+          <h2 class="text-xl font-bold text-[#1F2937]">Dados Pessoais</h2>
           <button class="rounded-full border border-[#4169E1] px-3 py-1 text-xs font-semibold text-[#4169E1]">Editar</button>
         </div>
         <div class="grid gap-3 sm:grid-cols-2 text-sm text-[#1F2937]">
@@ -215,10 +208,7 @@
 
       <div class="rounded-2xl border border-[#E5E7EB] bg-white p-6 space-y-4">
         <div class="flex items-center justify-between gap-2">
-          <div>
-            <p class="text-xs uppercase tracking-[0.18em] text-[#6B7280]">Cadastro do idoso</p>
-            <h2 class="text-xl font-semibold text-[#1F2937]">Pessoas atendidas</h2>
-          </div>
+          <h2 class="text-xl font-bold text-[#1F2937]">Pessoas Atendidas</h2>
           <button class="rounded-full bg-[#4169E1] px-3 py-1 text-xs font-semibold text-[#F9FAFB]">Adicionar idoso</button>
         </div>
         <div class="space-y-3">
@@ -245,13 +235,16 @@
     </section>
   </main>
 
-  <footer class="relative border-t border-[#E5E7EB] bg-[#F9FAFB]">
-    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 sm:flex-row sm:items-center sm:justify-between text-sm text-[#4B5563]">
-      <p class="text-[#1F2937] font-semibold">HELPO • Modulo Cliente</p>
-      <div class="flex gap-4">
-        <a class="text-[#4169E1]" href="#">Privacidade</a>
-        <a class="text-[#4169E1]" href="#">Termos</a>
-        <a class="text-[#4169E1]" href="#">Ajuda</a>
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <span class="text-xl font-bold text-white">HELPO</span>
+          <p class="text-sm mt-1">Cuidado profissional para quem você ama</p>
+        </div>
+        <div class="text-sm text-gray-400">
+          &copy; 2025 HELPO. Todos os direitos reservados.
+        </div>
       </div>
     </div>
   </footer>

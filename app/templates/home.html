@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HELPO - Cuidado Profissional para Idosos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'royal-blue': '#4169E1',
+            'snow': '#F5F7FA',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F5F7FA] text-gray-800 antialiased">
+  
+  <!-- Cabeçalho Fixo -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="/" class="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition">
+          <div class="w-10 h-10 bg-[#4169E1] rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xl">H</span>
+          </div>
+          <span class="text-2xl font-bold text-gray-900">HELPO</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="#home" class="text-gray-600 hover:text-[#4169E1] transition">Home</a>
+          <a href="/planos" class="text-gray-600 hover:text-[#4169E1] transition">Planos</a>
+          <a href="#contato" class="text-gray-600 hover:text-[#4169E1] transition">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Espaçamento para cabeçalho fixo -->
+  <div class="h-20"></div>
+
+  <!-- Seção de Chamada Principal -->
+  <section id="home" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Cuidado profissional e confiável para quem você ama
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
+          Conectamos famílias a cuidadores validados e qualificados. Agende com antecedência, escolha o tipo de cuidado e acompanhe tudo em tempo real.
+        </p>
+        
+        <!-- Botões de Ação -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/cliente" class="w-full sm:w-auto bg-[#4169E1] text-white px-8 py-4 rounded-[30px] font-semibold text-lg hover:bg-[#3457c4] transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            Quero ser Cliente
+          </a>
+          <a href="/cuidador" class="w-full sm:w-auto bg-white text-[#4169E1] border-2 border-[#4169E1] px-8 py-4 rounded-[30px] font-semibold text-lg hover:bg-[#4169E1] hover:text-white transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            Quero ser Cuidador
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards de Benefícios -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4169E1] mb-4">Por que escolher a HELPO?</h2>
+        <p class="text-lg text-gray-600">A plataforma que une segurança, praticidade e confiança</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <!-- Card 1: Segurança -->
+        <div class="bg-white border border-gray-200 rounded-[30px] p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-16 h-16 bg-[#4169E1] bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <span class="text-4xl">🔒</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#4169E1] mb-4 text-center">Cuidadores Validados</h3>
+          <p class="text-gray-600 text-justify leading-relaxed">Todos os profissionais são cuidadosamente verificados e treinados para oferecer cuidado de excelência e segurança.</p>
+        </div>
+
+        <!-- Card 2: Flexibilidade -->
+        <div class="bg-white border border-gray-200 rounded-[30px] p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-16 h-16 bg-[#4169E1] bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <span class="text-4xl">📅</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#4169E1] mb-4 text-center">Agendamento Fácil</h3>
+          <p class="text-gray-600 text-justify leading-relaxed">Agende com antecedência mínima de 12h e escolha o melhor horário que se adapta à sua rotina e necessidades.</p>
+        </div>
+
+        <!-- Card 3: Visibilidade -->
+        <div class="bg-white border border-gray-200 rounded-[30px] p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-16 h-16 bg-[#4169E1] bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <span class="text-4xl">👁️</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#4169E1] mb-4 text-center">Monitoramento</h3>
+          <p class="text-gray-600 text-justify leading-relaxed">Visualize o histórico completo de atendimentos, status em tempo real e relatórios detalhados de cada visita.</p>
+        </div>
+
+        <!-- Card 4: Qualidade -->
+        <div class="bg-white border border-gray-200 rounded-[30px] p-8 hover:shadow-xl transition-all duration-300">
+          <div class="w-16 h-16 bg-[#4169E1] bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <span class="text-4xl">💙</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#4169E1] mb-4 text-center">Cuidado Humanizado</h3>
+          <p class="text-gray-600 text-justify leading-relaxed">Tratamento respeitoso, atencioso e personalizado para garantir o conforto e bem-estar do seu ente querido.</p>
+        </div>
+      </div>
+
+      <!-- Botão Central -->
+      <div class="text-center mt-12">
+        <a href="/planos" class="inline-block bg-[#4169E1] text-white px-10 py-4 rounded-[30px] font-semibold text-lg hover:bg-[#3457c4] transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+          Conhecer Planos de Serviços
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chamada para Inscrição -->
+  <section class="py-16 bg-[#F5F7FA]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-white rounded-[30px] shadow-xl p-8 md:p-12">
+        <div class="grid grid-cols-2 gap-12 items-center">
+          <!-- Lado Esquerdo - Cliente -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-[#4169E1] bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <span class="text-4xl">👨‍👩‍👧‍👦</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Precisa de um cuidador?</h3>
+            <p class="text-gray-600 mb-6">Cadastre-se como cliente e encontre profissionais qualificados para cuidar de quem você ama.</p>
+            <a href="/cliente" class="inline-block bg-[#4169E1] text-white px-6 py-3 rounded-[30px] font-semibold hover:bg-[#3457c4] transition shadow-md hover:shadow-lg">
+              Cadastrar como Cliente
+            </a>
+          </div>
+
+          <!-- Lado Direito - Cuidador -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-[#4169E1] bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <span class="text-4xl">🩺</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">É profissional de cuidados?</h3>
+            <p class="text-gray-600 mb-6">Cadastre-se como cuidador e conecte-se com famílias que precisam do seu trabalho.</p>
+            <a href="/cuidador" class="inline-block bg-white text-[#4169E1] border-2 border-[#4169E1] px-6 py-3 rounded-[30px] font-semibold hover:bg-[#4169E1] hover:text-white transition shadow-md hover:shadow-lg">
+              Cadastrar como Cuidador
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <span class="text-xl font-bold text-white">HELPO</span>
+          <p class="text-sm mt-1">Cuidado profissional para quem você ama</p>
+        </div>
+        <div class="text-sm text-gray-400">
+          &copy; 2025 HELPO. Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
